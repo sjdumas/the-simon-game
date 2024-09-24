@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	@apply font-sans font-normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	@apply font-sans font-semibold py-3;
+}
+
+h1 {
+	@apply text-4xl sm:text-5xl lg:text-6xl;
+}
+
+h2 {
+	@apply text-3xl sm:text-4xl lg:text-5xl;
+}
+
+h3 {
+	@apply text-xl sm:text-2xl lg:text-3xl;
+}
+
+h4 {
+	@apply text-lg sm:text-xl lg:text-2xl;
+}
+
+h5 {
+	@apply text-base sm:text-lg lg:text-xl;
+}
+
+p {
+	@apply text-base sm:text-lg py-2;
+}
+
+a {
+	@apply font-sans font-semibold no-underline;
+}
+
+a:hover {
+	@apply underline;
+}
+
+.main-title {
+	@apply text-center text-3xl sm:text-4xl lg:text-5xl;
+}
+
+.start-page {
+	@apply flex flex-col justify-center items-center h-screen mx-auto max-w-full sm:max-w-[700px] px-4 my-8;
+}
+
+.simon-game {
+	@apply text-center px-4 py-4 mx-auto max-w-full sm:max-w-sm lg:max-w-md;
+}
+
+.score-container {
+	@apply flex justify-between py-2 text-sm sm:text-lg lg:text-xl;
+}
+
+.color-button {
+	@apply rounded-lg cursor-pointer opacity-65 h-16 w-16 sm:h-24 sm:w-24 lg:h-32 lg:w-32;
+}
+
+.color-button.active {
+	@apply opacity-100;
+}
+
+.game-buttons {
+	@apply flex flex-col sm:flex-row justify-center items-center gap-2 mt-4 sm:mt-6 lg:mt-8;
+}
+
+button {
+	@apply mt-6 rounded-md py-2 px-4 text-lg font-semibold w-full sm:w-auto max-w-xs sm:max-w-none border-0 cursor-pointer;
+}
+
+button:hover {
+	@apply opacity-90;
+}
