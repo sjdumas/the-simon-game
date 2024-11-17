@@ -1,5 +1,3 @@
-![Simon Game Logo](simon-github-img.png)
-
 # Simon Game 
 
 This repository contains the code for the classic electronic Simon game, which was created using React. 
